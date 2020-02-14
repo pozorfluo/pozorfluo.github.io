@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Hello, World !</title>
+		<link rel="stylesheet" href="../css/showcase.css">
+		<link rel="stylesheet" href="../css/hello_world.css">
+		<link rel="stylesheet"
+			  href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/atelier-dune-dark.min.css">
+		<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js"></script>
+	</head>
+	<body>
+		<article>
+			<a href="../index.html" class="closebox">
+				<img class="close" src="../data/close_cross.svg" 
+					 alt="click to close" 
+					 width="24" height="24" />
+			</a>
+			<h1 id="output">Hello, World !</h1>
+			<p align="center">
+                <input type="text" placeholder="Type your name..."/>
+            </p>
+			<br />
+			<h2>The code</h2>
+			<pre><code class="javascript">
+function sayHello(domElement, name) {
+	domElement.textContent = `Hello, ${name}!`;
+}
+
+window.onload = (event) => {
+	const domElement = document.getElementById("output");
+	const input = document.querySelector('input');
+
+	document.querySelectorAll('pre code').forEach((block) => {
+		hljs.highlightBlock(block);
+	});
+	
+	input.addEventListener('input', function() {
+		sayHello(domElement, input.value ? input.value : 'World')
+		}, false);
+};
+		   </code></pre>
+			<br/><br/>
+			<p align="center">
+				<button type="button" 
+						onclick="window.location.href = '../index.html';">
+					Go back !
+				</button>
+			</p>
+		</article>
+		<script src="../js/hello_world.js"></script>
+	</body>
+</html>
