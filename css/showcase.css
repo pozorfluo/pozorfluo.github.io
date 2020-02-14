@@ -28,7 +28,7 @@ article {
     max-width: 80ch;
 	background: #ffffff;
 	/* background: #0069ed; */
-    padding: 0rem 1rem;
+    padding: 1rem 1rem;
     -webkit-box-shadow: 0px 2px 7px 0px rgba(59,56,84,1);
     -moz-box-shadow: 0px 2px 7px 0px rgba(59,56,84,1);
     box-shadow: 0px 2px 7px 0px rgba(59,56,84,1);
@@ -49,15 +49,11 @@ h2 {
     padding-top: 0.5rem;
 }
 
-/* a {
-    color: #017171;
-    text-decoration-skip-ink: auto;
-} */
-
 a {
 	color: #43e4cd;
 	font-weight: 900;
 	padding: 1em 0;
+	text-decoration-skip-ink: auto;
   }
   a:hover {
 	-webkit-text-decoration-style: wavy;
@@ -85,17 +81,19 @@ button {
 	-moz-appearance: none;
     border: 1px solid rgba(255, 255, 255, 0.2);
 	border-radius: 3px;
-	box-shadow:  -20px 20px 60px #cad8ca, 
-				  20px -20px 60px #eefeee;
+	-webkit-box-shadow: 0px 0px 40px -5px rgba(0,105,237,0.3);
+  	-moz-box-shadow: 0px 0px 40px -5px rgba(0,105,237,0.3);
+		 box-shadow: 0px 0px 40px -5px rgba(0,105,237,0.3);
 }
 
 button:hover,
 button:focus {
-    background: #0053ba;
+	background: #0053ba;
+	text-transform: uppercase;
 }
 
 button:focus {
-	text-transform: uppercase;
+	text-transform: uppercase;				
 }
 button:active {
     transform: scale(0.99);
@@ -103,6 +101,26 @@ button:active {
 
 .close {
 	border-style: solid;
-	border-color: #69e781;
-	border-width: 0px 0px 3px 0px;
+	border-color: #cafdd4;
+	padding: 4px;
+	border-width: 0px 0px 2px 0px;
+}
+.close:active{
+	border-width: 0px;
+}
+.closebox{
+	float: right;
+	padding: 0px 0px 0px 0px;
+	border: solid #f2f5f8;
+	border-width: 2px 2px 0px 2px;
+	border-radius: 4px;
+
+}
+.closebox:hover{
+	background-color: #f2f5f8;
+}
+.closebox:active{
+	border-color: #9be5a8;
+	background-color: #f2f5f8;
+	border-width: 2px 2px 2px 2px;
 }

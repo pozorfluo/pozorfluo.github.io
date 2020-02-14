@@ -17,7 +17,8 @@ function toRomanNumerals(number)
 }
 
 function changeInput(domElement, value = 0) {
-	domElement.textContent = toRomanNumerals(value);
+	romanNumeral = toRomanNumerals(value);
+	domElement.textContent = romanNumeral ? romanNumeral : "...";
 }
 
 window.onload = (event) => {
