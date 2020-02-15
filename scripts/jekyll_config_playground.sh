@@ -33,7 +33,7 @@ bundle
 # Make sure to use the Jekyll version defined in Gemfile
 #  -> prefix all further Jekyll commands with 'bundle exec'
 
-# add .gitignore file tailored for Jekyll
+# create a .gitignore file tailored for Jekyll
 cat <<-GITIGNORE > .gitignore
 	# volatile folders
 	.tmp/*
@@ -46,7 +46,17 @@ cat <<-GITIGNORE > .gitignore
 
 	# github pages
 	Gemfile.lock
+
+	# vs code
+	.vscode/*
+	!.vscode/settings.json
+	!.vscode/tasks.json
+	!.vscode/launch.json
+	!.vscode/extensions.json
 GITIGNORE
 
-# # track these files, if they exist
-# !.gitignore
+# build the site with current draft
+bundle exec jekyll build
+
+# build and serve at http://localhost:4000
+bundle exec jekyll serve
