@@ -1,0 +1,11 @@
+# volatile folders
+.tmp/*
+
+# jekyll
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+
+# github pages
+Gemfile.lock
