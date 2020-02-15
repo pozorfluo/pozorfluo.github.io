@@ -75,11 +75,12 @@ button {
     letter-spacing: 0.1rem;
     cursor: pointer;
     text-align: center;
-    transition:	background 250ms ease-in-out, 
+    transition:	background 100ms ease-in-out, 
                 transform 150ms ease;
     -webkit-appearance: none;
        -moz-appearance: none;
-    border: 1px solid rgba(255, 255, 255, 0.2);
+	border: solid rgba(255, 255, 255, 0.2);
+	border-width: 2px 1px 2px 1px;
     border-radius: 3px;
     -webkit-box-shadow: 0px 0px 40px -5px rgba(0,105,237,0.2);
        -moz-box-shadow: 0px 0px 40px -5px rgba(0,105,237,0.2);
@@ -89,11 +90,19 @@ button {
 button:hover,
 button:focus {
     background: #0053ba;
-    text-transform: uppercase;
+	/* text-transform: uppercase; */
+	border: solid #0069ed;
+    border-width: 3px 2px 1px 2px;
+    border-radius: 4px;
 }
 button:active {
-    text-transform: uppercase;
-    transform: scale(0.99);
+	/* text-transform: uppercase; */
+	background: #ffffff;
+	color: #0069ed;
+	transform: scale(0.99);
+	border: solid #9be5a8;
+    border-width: 2px;
+    border-radius: 4px;
 }
 
 .close {
