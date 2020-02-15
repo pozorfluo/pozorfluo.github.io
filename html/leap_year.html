@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Hello, World !</title>
+        <title>Leap Year</title>
         <link rel="stylesheet" href="../css/showcase.css">
-        <link rel="stylesheet" href="../css/hello_world.css">
+        <link rel="stylesheet" href="../css/leap_year.css">
         <link rel="stylesheet"
               href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/atelier-dune-dark.min.css">
         <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js"></script>
@@ -15,30 +15,19 @@
                      alt="click to close" 
                      width="24" height="24" />
             </a>
-            <h1 id="output">Hello, World !</h1>
+            <h1>is it a Leap Year ?</h1>
+            <p align="center" id="output">...</p>
             <p align="center">
-                <input type="text" placeholder="Type your name..."/>
+                <input type="text" placeholder="Type a number..."/>
             </p>
             <br />
             <h2>The code</h2>
             <pre><code class="javascript">
-function sayHello(domElement, name) {
-    domElement.textContent = `Hello, ${name}!`;
+function isLeap(year) {
+    return !!(!(year % 400) || ((year % 100) && !(year % 4)));
 }
-
-window.onload = (event) => {
-    const domElement = document.getElementById("output");
-    const input = document.querySelector('input');
-
-    document.querySelectorAll('pre code').forEach((block) => {
-        hljs.highlightBlock(block);
-    });
-    
-    input.addEventListener('input', function() {
-        sayHello(domElement, input.value ? input.value : 'World')
-        }, false);
-};
            </code></pre>
+           <p>The Double NOT (!!) is used to force the conversion to boolean.</p>
             <br/><br/>
             <p align="center">
                 <button type="button" 
@@ -47,6 +36,6 @@ window.onload = (event) => {
                 </button>
             </p>
         </article>
-        <script src="../js/hello_world.js"></script>
+        <script src="../js/leap_year.js"></script>
     </body>
 </html>

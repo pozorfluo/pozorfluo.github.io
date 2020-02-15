@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Hello, World !</title>
+        <title>FizzBuzz</title>
         <link rel="stylesheet" href="../css/showcase.css">
-        <link rel="stylesheet" href="../css/hello_world.css">
+        <link rel="stylesheet" href="../css/fizzbuzz.css">
         <link rel="stylesheet"
               href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/atelier-dune-dark.min.css">
         <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js"></script>
@@ -15,15 +15,25 @@
                      alt="click to close" 
                      width="24" height="24" />
             </a>
-            <h1 id="output">Hello, World !</h1>
+            <h1>FizzBuzz</h1>
+            <p align="center" id="output">...</p>
             <p align="center">
-                <input type="text" placeholder="Type your name..."/>
+                <input type="text" placeholder="Type a number..."/>
             </p>
             <br />
             <h2>The code</h2>
             <pre><code class="javascript">
-function sayHello(domElement, name) {
-    domElement.textContent = `Hello, ${name}!`;
+function fizzbuzz(number) {
+    const result = [`${number}`,
+                    "fizz",
+                    "buzz",
+                    "fizzbuzz"];
+
+    return result[!(number % 3) + !(number % 5) * 2];
+}
+
+function changeInput(domElement, value) {
+    domElement.textContent = value ? fizzbuzz(value) : "...";
 }
 
 window.onload = (event) => {
@@ -33,10 +43,10 @@ window.onload = (event) => {
     document.querySelectorAll('pre code').forEach((block) => {
         hljs.highlightBlock(block);
     });
-    
+
     input.addEventListener('input', function() {
-        sayHello(domElement, input.value ? input.value : 'World')
-        }, false);
+        changeInput(domElement, parseInt(input.value))
+    }, false);
 };
            </code></pre>
             <br/><br/>
@@ -47,6 +57,6 @@ window.onload = (event) => {
                 </button>
             </p>
         </article>
-        <script src="../js/hello_world.js"></script>
+        <script src="../js/fizzbuzz.js"></script>
     </body>
 </html>
