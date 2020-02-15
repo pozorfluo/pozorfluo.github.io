@@ -3,10 +3,7 @@
     <head>
         <title>FizzBuzz</title>
         <link rel="stylesheet" href="../css/showcase.css">
-        <link rel="stylesheet" href="../css/fizzbuzz.css">
-        <link rel="stylesheet"
-              href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/atelier-dune-dark.min.css">
-        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js"></script>
+        <script src="../js/vendor/highlight.pack.js"></script>
     </head>
     <body>
         <article>
@@ -23,31 +20,9 @@
             <br />
             <h2>The code</h2>
             <pre><code class="javascript">
-function fizzbuzz(number) {
-    const result = [`${number}`,
-                    "fizz",
-                    "buzz",
-                    "fizzbuzz"];
-
-    return result[!(number % 3) + !(number % 5) * 2];
-}
-
-function changeInput(domElement, value) {
-    domElement.textContent = value ? fizzbuzz(value) : "...";
-}
-
-window.onload = (event) => {
-    const domElement = document.getElementById("output");
-    const input = document.querySelector('input');
-
-    document.querySelectorAll('pre code').forEach((block) => {
-        hljs.highlightBlock(block);
-    });
-
-    input.addEventListener('input', function() {
-        changeInput(domElement, parseInt(input.value))
-    }, false);
-};
+                <iframe src="../js/fizzbuzz.js" 
+                    onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()">
+                </iframe>
            </code></pre>
             <br/><br/>
             <p align="center">

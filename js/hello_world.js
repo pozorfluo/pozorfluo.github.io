@@ -1,3 +1,5 @@
+'use strict';
+
 function sayHello(domElement, name) {
     domElement.textContent = `Hello, ${name}!`;
 }

@@ -1,3 +1,5 @@
+'use strict';
+
 function fizzbuzz(number) {
     const result = [`${number}`,
                     "fizz",
@@ -21,5 +23,5 @@ window.onload = (event) => {
 
     input.addEventListener('input', function() {
         changeInput(domElement, parseInt(input.value))
-        }, false);
+    }, false);
 };

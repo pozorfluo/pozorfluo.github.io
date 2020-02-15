@@ -1,3 +1,4 @@
+'use strict';
 
 function toRomanNumerals(number)
 {
@@ -17,19 +18,19 @@ function toRomanNumerals(number)
 }
 
 function changeInput(domElement, value = 0) {
-    romanNumeral = toRomanNumerals(value);
+    const romanNumeral = toRomanNumerals(value);
     domElement.textContent = romanNumeral ? romanNumeral : "...";
 }
 
 window.onload = (event) => {
-    const domElement = document.getElementById("romans");
-    const input = document.querySelector('input');
+    const domElement = document.getElementById("output");
+    const input = document.getElementById("input1");
 
-    document.querySelectorAll('pre code').forEach((block) => {
+    document.querySelectorAll("pre code").forEach((block) => {
         hljs.highlightBlock(block);
     });
     
-    input.addEventListener('input', function() {
+    input.addEventListener("input", function() {
         changeInput(domElement, input.value)
         }, false);
 };

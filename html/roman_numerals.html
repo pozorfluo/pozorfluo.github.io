@@ -3,10 +3,7 @@
     <head>
         <title>Roman Numerals</title>
         <link rel="stylesheet" href="../css/showcase.css">
-        <link rel="stylesheet" href="../css/roman_numerals.css">
-        <link rel="stylesheet"
-              href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/atelier-dune-dark.min.css">
-        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js"></script>
+        <script src="../js/vendor/highlight.pack.js"></script>
     </head>
     <body>
         <article>
@@ -16,30 +13,17 @@
                      width="24" height="24" />
             </a>
             <h1>Roman Numerals</h1>
-            <p align="center" id="romans">...</p>
+            <p align="center" id="output">...</p>
 
             <p align="center">
-                <input type="text" placeholder="Type a number..."/>
+                <input type="text" id="input1" placeholder="Type a number..."/>
             </p>
             <br />
             <h2>The code is  so cute !</h2>
             <pre><code class="javascript">
-function toRomanNumerals(number)
-{
-    return 'I'.repeat(number)
-              .replace(/IIIII/g, 'V')
-              .replace(/IIII/g,  'IV')
-              .replace(/VV/g,    'X')
-              .replace(/VIV/g,   'IX')
-              .replace(/XXXXX/g, 'L')
-              .replace(/XXXX/g,  'XL')
-              .replace(/LL/g,    'C')
-              .replace(/LXL/g,   'XC')
-              .replace(/CCCCC/g, 'D')
-              .replace(/CCCC/g,  'CD')
-              .replace(/DD/g,    'M')
-              .replace(/DCD/g,   'CM');
-}
+                <iframe src="../js/roman_numerals.js" 
+                    onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()">
+                </iframe>
            </code></pre>
             <br />
             <h2>It's almost literally this table</h2>

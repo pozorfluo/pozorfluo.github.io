@@ -1,3 +1,5 @@
+@import 'highlight_theme.css';
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono:300,500,700&display=swap');
 html {
     height: 100%;
 }
@@ -79,8 +81,8 @@ button {
                 transform 150ms ease;
     -webkit-appearance: none;
        -moz-appearance: none;
-	border: solid rgba(255, 255, 255, 0.2);
-	border-width: 2px 1px 2px 1px;
+    border: solid rgba(255, 255, 255, 0.2);
+    border-width: 2px 1px 2px 1px;
     border-radius: 3px;
     -webkit-box-shadow: 0px 0px 40px -5px rgba(0,105,237,0.2);
        -moz-box-shadow: 0px 0px 40px -5px rgba(0,105,237,0.2);
@@ -90,17 +92,17 @@ button {
 button:hover,
 button:focus {
     background: #0053ba;
-	/* text-transform: uppercase; */
-	border: solid #0069ed;
+    /* text-transform: uppercase; */
+    border: solid #0069ed;
     border-width: 3px 2px 1px 2px;
     border-radius: 4px;
 }
 button:active {
-	/* text-transform: uppercase; */
-	background: #ffffff;
-	color: #0069ed;
-	transform: scale(0.99);
-	border: solid #9be5a8;
+    /* text-transform: uppercase; */
+    background: #ffffff;
+    color: #0069ed;
+    transform: scale(0.99);
+    border: solid #9be5a8;
     border-width: 2px;
     border-radius: 4px;
 }
@@ -129,4 +131,46 @@ button:active {
     border-color: #9be5a8;
     background-color: #f2f5f8;
     border-width: 2px 2px 2px 2px;
+}
+
+pre {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size:1em;
+	line-height: 1.25;
+	/* letter-spacing: -1px; */
+    margin: 0;
+    padding: 0;
+}
+
+code {
+
+    padding: 2px 4px;
+    background: #054ada;
+    color: #f3f3f3;
+    border-radius: 5px;
+    -webkit-box-shadow: inset 0px 2px 73px -42px rgba(255,255,255,0.75);
+       -moz-box-shadow: inset 0px 2px 73px -42px rgba(255,255,255,0.75);
+            box-shadow: inset 0px 2px 73px -42px rgba(255,255,255,0.75);
+}
+
+pre code {
+    display: block;
+    position: relative;
+    overflow-x: auto;
+    tab-size: 4;
+    padding: 2rem;
+    -webkit-overflow-scrolling: touch;
+}
+
+input {
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 300;
+    padding:0.5em;
+    font-size:2em;
+}
+
+#output{
+    padding:0em;
+    font-size:2.5em;
+    font-weight: 900;
 }

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Leap Year</title>
+        <title>Hamming</title>
         <link rel="stylesheet" href="../css/showcase.css">
         <script src="../js/vendor/highlight.pack.js"></script>
     </head>
@@ -12,19 +12,22 @@
                      alt="click to close" 
                      width="24" height="24" />
             </a>
-            <h1>is it a Leap Year ?</h1>
+            <h1>Hamming</h1>
             <p align="center" id="output">...</p>
             <p align="center">
-                <input type="text" placeholder="Type a number..."/>
+                <input type="text" id="input1" placeholder="Type a sequence..."/>
+            </p>
+            <p align="center">
+                <input type="text" id="input2" placeholder="Type another sequence..."/>
             </p>
             <br />
             <h2>The code</h2>
             <pre><code class="javascript">
-                <iframe src="../js/leap_year.js" 
+                <iframe src="../js/hamming.js" 
                     onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()">
                 </iframe>
            </code></pre>
-           <p>The Double NOT (!!) is used to force the conversion to boolean.</p>
+
             <br/><br/>
             <p align="center">
                 <button type="button" 
@@ -33,6 +36,6 @@
                 </button>
             </p>
         </article>
-        <script src="../js/leap_year.js"></script>
+        <script src="../js/hamming.js"></script>
     </body>
 </html>
