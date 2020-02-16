@@ -108,12 +108,7 @@ button:active {
     border-width: 2px;
     border-radius: 4px;
 }
-.svg-button {
-    stroke: #fff;
-}
-button:active .svg-button{
-    stroke: #0069ed;
-}
+
 .close {
     border-style: solid;
     border-color: #cafdd4;

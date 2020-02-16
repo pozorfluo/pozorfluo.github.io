@@ -1,0 +1,27 @@
+<nav>
+   <hr/>
+    <p align="center">
+        {% if page.url == "/" %}
+            {% for item in site.data.navigation %}
+                <button type="button" 
+                        onclick="window.location.href = '{{ item.link }}';">
+                    {{ item.name}}
+                </button>
+            {% endfor %}
+        {% else %}
+            <button type="button"
+                    onclick="window.location.href = '../index.html';">
+                <svg class="svg-button" 
+                        xmlns="http://www.w3.org/2000/svg" 
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        width="30px" height="20px" viewBox="0 0 30 30" 
+                        stroke="#FFFFFF" stroke-width="6px">
+                    <line x1="0" y1="3" x2="38" y2="3" />
+                    <line x1="0" y1="15" x2="38" y2="15" />
+                    <line x1="0" y1="27" x2="38" y2="27" />
+                </svg>
+            </button>
+        {% endif %}
+    </p>
+    <br/>
+</nav>

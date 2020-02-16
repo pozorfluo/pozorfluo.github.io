@@ -16,3 +16,47 @@ echo $GEM_HOME
 
 # install Jekyll
 gem install jekyll bundler
+
+# create a branch for introduction of Jekyll
+git checkout -b feature-jekyll master 
+git push origin feature-jekyll
+
+# create a Gemfile list project dependencies
+bundle init
+
+# add Jekyll as a dependency
+echo 'gem "jekyll"' >> Gemfile
+
+# install Jekyll for current project
+bundle
+
+# Make sure to use the Jekyll version defined in Gemfile
+#  -> prefix all further Jekyll commands with 'bundle exec'
+
+# create a .gitignore file tailored for Jekyll
+cat <<-GITIGNORE > .gitignore
+	# volatile folders
+	.tmp/*
+
+	# jekyll
+	_site/
+	.sass-cache/
+	.jekyll-cache/
+	.jekyll-metadata
+
+	# github pages
+	Gemfile.lock
+
+	# vs code
+	.vscode/*
+	!.vscode/settings.json
+	!.vscode/tasks.json
+	!.vscode/launch.json
+	!.vscode/extensions.json
+GITIGNORE
+
+# build the site with current draft
+bundle exec jekyll build
+
+# build and serve at http://localhost:4000
+bundle exec jekyll serve
