@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hamming</title>
+        <link rel="stylesheet" href="../css/showcase.css">
+        <script src="../js/vendor/highlight.pack.js"></script>
+    </head>
+    <body>
+        <article>
+            <a href="../index.html" class="closebox">
+                <img class="close" src="../data/close_cross.svg" 
+                     alt="click to close" 
+                     width="24" height="24" />
+            </a>
+            <h1>Hamming</h1>
+            <p align="center" id="output">...</p>
+            <p align="center">
+                <input type="text" id="input1" placeholder="Type a sequence..."/>
+            </p>
+            <p align="center">
+                <input type="text" id="input2" placeholder="and another one..."/>
+            </p>
+            <br />
+            <h2>The code</h2>
+            <pre><code class="javascript">
+                <iframe src="../js/hamming.js" 
+                    onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()">
+                </iframe>
+           </code></pre>
+
+            <br/><br/>
+            <p align="center">
+                <button type="button" 
+                        onclick="window.location.href = '../index.html';">
+                         &laquo; back
+                </button>
+            </p>
+        </article>
+        <script src="../js/hamming.js"></script>
+    </body>
+</html>
