@@ -60,3 +60,16 @@ bundle exec jekyll build
 
 # build and serve at http://localhost:4000
 bundle exec jekyll serve
+
+# keep a hard copy of site before Jekyll introduction to showcase rough state
+# mkdir rough
+# cp -r index.html css data html js rough
+
+# make a directory for layouts
+mkdir _layouts
+
+# make a directory for includes
+mkdir _includes
+
+# make a directory for data
+mkdir _data
