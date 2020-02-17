@@ -4,12 +4,12 @@ title : Educational exercises showcase
 heading : Exercises showcase
 ---
 <p align="center">
-    {% for item in site.data.exercises %}
+    {% for post in site.posts reversed %}
         <button type="button" 
-                onclick="window.location.href = '{{ item.link }}';">
-            {{ item.name}}
+                onclick="window.location.href = '{{ post.url }}';">
+            {{ post.title }}
         </button>
-    {% endfor %}		
+    {% endfor %}
 </p>
 <p align="right">
     <a href="https://github.com/pozorfluo/pozorfluo.github.io">source</a>

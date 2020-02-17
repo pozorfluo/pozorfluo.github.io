@@ -5,9 +5,37 @@
         <circle cx="50" cy="50" r="45"/>
     </svg>
     {% unless page.url == "/" %}
+        {% if page.url == "/about.html" %}
         <span>{{ page.url }}</span>
-        <a href="../index.html" class="closebox">
-            <svg class="close"
+        {% else %}
+            <span>/{{ page.categories }}/{{ page.fakename }}</span>
+            {% unless page.previous.url == nil %}
+                <a href="{{ page.previous.url }}" class="navbutton-box">
+                    <svg class="navbutton"
+                        width="24px" height="24px" viewBox="0 0 58 58"
+                        xmlns="http://www.w3.org/2000/svg" 
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        alt="previous"
+                        stroke="#FF6465" stroke-width="25%">
+                        <path d="M41,5 l-25,25 l25,25" fill="none"/>
+                    </svg>
+                </a>
+            {% endunless %}
+            {% unless page.next.url == nil %}
+                <a href="{{ page.next.url }}" class="navbutton-box">
+                    <svg class="navbutton"
+                        width="24px" height="24px" viewBox="0 0 58 58"
+                        xmlns="http://www.w3.org/2000/svg" 
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        alt="next"
+                        stroke="#FF6465" stroke-width="25%">
+                        <path d="M17,5 l25,25 l-25,25" fill="none"/>
+                    </svg>
+                </a>
+            {% endunless %}
+        {% endif %}
+        <a href="/index.html" class="navbutton-box">
+            <svg class="navbutton"
                 xmlns="http://www.w3.org/2000/svg" 
                 xmlns:xlink="http://www.w3.org/1999/xlink"
                 alt="click to close"
@@ -16,6 +44,7 @@
                 <line x1="10" y1="10" x2="50" y2="50"/>
                 <line x1="50" y1="10" x2="10" y2="50"/>
             </svg>
-        </a>
+        </a>        
     {% endunless %}
 </div>
+

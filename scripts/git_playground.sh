@@ -39,6 +39,17 @@ git status
 
 git add -A
 
-git commit -m "Align focus and hover behaviour"
+git commit -m "Refactor exercises pages as Jekyll posts
+
+	Discard lists data/exercises.yaml.
+
+	Take advatange of Jekyll posts previous/next lookup and add
+	navigation between posts in header.
+
+	Streamline .close button css rules to work with extended header
+	navigation.
+	
+	Rename .close button css rules to .nav to reflect extended 
+	functionality."
 
 git push -u origin master

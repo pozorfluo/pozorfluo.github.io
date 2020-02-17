@@ -1,9 +1,9 @@
-.close {
+.navbutton {
     padding: 6px;
     stroke: $color-accent-dim;
 }
 
-.closebox{
+.navbutton-box{
     float: right;
     padding: 0px 0px 0px 0px;
     border: solid $color-accent-dim;
@@ -11,23 +11,20 @@
     border-radius: 4px;
 }
 
-.closebox:hover,
-.closebox:focus {
+.navbutton-box:hover,
+.navbutton-box:focus {
     background-color: $color-bg-dim;
-    border: solid $color-bg-dim;
+    border-color: $color-bg-dim;
     box-shadow: 0px 0px 40px -5px $color-active-bloom;
-    .close{
-        border-width: 0px;
+    .navbutton {
         stroke: $color-accent-danger;
     }
 }
 
-.closebox:active{
-    border-color: $color-active;
+.navbutton-box:active{
+    border-color: $color-accent;
     background-color: $color-bg-dim;
-    border-width: 2px;
-    .close{
-        border-width: 0px;
-        stroke: $color-accent;
+    .navbutton {
+        stroke: $color-active;
     }
 }

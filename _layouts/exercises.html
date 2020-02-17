@@ -3,8 +3,8 @@
     <head>
         <meta charset="UTF-8">
         <title>{{ page.title }}</title>
-        <link rel="stylesheet" href="../css/styles.css">
-        <script src="../js/vendor/highlight.pack.js"></script>
+        <link rel="stylesheet" href="/css/styles.css">
+        <script src="/js/vendor/highlight.pack.js"></script>
     </head>
     <body>
         <article>
@@ -12,7 +12,7 @@
             {{ content }}
             <h2>The code</h2>
             <pre><code class="javascript">
-                <iframe src="../js/{{ page.script }}" 
+                <iframe src="/js/{{ page.script }}" 
                     onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()">
                 </iframe>
             </code></pre>
@@ -30,6 +30,6 @@
                 </svg>
             </a>
         </span>
-        <script src="../js/{{ page.script }}"></script>
+        <script src="/js/{{ page.script }}"></script>
     </body>
 </html>

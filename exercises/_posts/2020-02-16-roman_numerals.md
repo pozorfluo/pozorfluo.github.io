@@ -1,6 +1,7 @@
 ---
 layout : exercises
 title : "Roman Numerals"
+fakename : "roman_numerals.html"
 script : "roman_numerals.js"
 caption : |
     ## It's so cute it's almost literally this table
