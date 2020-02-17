@@ -1,0 +1,31 @@
+$font-main: -apple-system, BlinkMacSystemFont, 
+            "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", 
+            "Fira Sans", "Droid Sans", "Helvetica Neue", 
+            sans-serif;
+$font-code: 'IBM Plex Mono', monospace;
+
+// todo
+// - [ ] learn about sass color mix functions
+//     + [ ] see if it is worth moving away from a hard palette defined in ps
+//     + [ ] try blending local, mdfl, bb, hl, mpdhl, etc... in sass
+
+$color-bg: #ffffff;
+$color-bg-dim: #f2f5f8;
+$color-fg: #333;
+$color-fg-faint: #d9e2ea;
+$color-accent: #0069ed;
+$color-accent-alt: #054ada;
+$color-accent-dim: #0053ba;
+$color-accent-danger: #ff6465;
+$color-accent-irr: rgba(255,255,255,0.75);
+$color-accent-irr-soft: rgba(255,255,255,0.35);
+$color-accent-irr-softer: rgba(255,255,255,0.15);
+$color-accent-bloom: rgba(0,105,237,0.2);
+$color-accent-shadow: rgba(59,56,84,1);
+$color-accent-spec: rgba(255, 255, 255, 0.2);
+$color-wallpaper: rgba(70, 205, 88, 1);
+$color-pattern:rgba(84 , 56 , 180, 0.2);
+$color-pattern-dark:rgba(84 , 56 , 180, 0.3);
+$color-active: #9be5a8;
+$color-active-bloom: rgba(242,245,248,0.85);
+$color-link: #43e4cd;

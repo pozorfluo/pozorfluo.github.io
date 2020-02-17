@@ -1,0 +1,87 @@
+html {
+    height: 100%;
+}
+
+body {
+    display: grid;
+    font-family: $font-main;
+    line-height: 1;
+    padding: 1rem;
+    color: $color-fg;
+    background:
+        linear-gradient(135deg, $color-pattern-dark 25%, transparent 25%) -50px 0,
+        linear-gradient(225deg, $color-pattern 25%, transparent 25%) -50px 0,
+        linear-gradient(315deg, $color-pattern-dark 25%, transparent 25%),
+        linear-gradient(45deg,  $color-pattern 25%, transparent 25%);
+    background-size: 100px 100px;
+    background-color: $color-wallpaper;
+}
+
+article {
+    margin: auto;
+    min-height: 60%;
+    width: 43rem;
+    border-radius : 16px 16px 2px 2px;
+    background: $color-bg;
+    padding: 1rem 1rem;
+    -webkit-box-shadow: 0px 2px 7px 0px $color-accent-shadow;
+       -moz-box-shadow: 0px 2px 7px 0px $color-accent-shadow;
+            box-shadow: 0px 2px 7px 0px $color-accent-shadow;
+}
+
+.article-header {
+    border-radius : 16px 16px 0px 0px;
+    background-color: $color-accent;
+    margin: -1rem -1rem;
+    padding: 0.75rem 0.75rem 0.6rem 0.75rem;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 43.5rem;
+    height: 2.5rem;
+    box-shadow: inset 0px 2px 50px -25px $color-accent-irr-soft;
+}
+
+.article-header span {
+    flex: 1;
+    padding-left: 0.5rem;
+    color: $color-accent-dim;
+}
+
+h1, h2 {
+    font-weight: 300;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3.5rem;
+    margin-bottom: 0rem;
+}
+
+h2 {
+    padding-top: 0.5rem;
+}
+
+a {
+    color: $color-link;
+    font-weight: 900;
+    padding: 1em 0;
+    text-decoration-skip-ink: auto;
+    text-decoration-thickness: 1.5px;
+}
+a:hover {
+    text-decoration-thickness: auto;
+    -webkit-text-decoration-style: wavy;
+            text-decoration-style: wavy;
+    -webkit-text-decoration-color: initial;
+            text-decoration-color: initial;
+}
+
+hr {
+    background-color: $color-fg-faint;
+    height: 3px;
+    border : none;
+    border-radius: 5px;
+}

@@ -1,0 +1,31 @@
+.close {
+    padding: 6px;
+    stroke: $color-accent-dim;
+}
+
+.closebox{
+    float: right;
+    padding: 0px 0px 0px 0px;
+    border: solid $color-accent-dim;
+    border-width: 2px;
+    border-radius: 4px;
+}
+
+.closebox:hover{
+    background-color: $color-bg-dim;
+    border: solid $color-bg-dim;
+    box-shadow: 0px 0px 40px -5px $color-active-bloom;
+}
+.closebox:hover .close{
+    border-width: 0px;
+    stroke: $color-accent-danger;
+}
+.closebox:active{
+    border-color: $color-active;
+    background-color: $color-bg-dim;
+    border-width: 2px;
+}
+.closebox:active .close{
+    border-width: 0px;
+    stroke: $color-accent;
+}

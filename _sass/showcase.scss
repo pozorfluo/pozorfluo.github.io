@@ -1,0 +1,18 @@
+input {
+    font-family: $font-code;
+    font-weight: 300;
+    font-size:2em;
+    color: #333;
+    background-color: $color-bg-dim;
+    border: solid 3px $color-fg-faint;
+    border-radius: 5px;
+    width: 40.8rem;
+    margin: auto;
+    padding: 1rem;
+}
+
+#output{
+    padding:0em;
+    font-size:2.5em;
+    font-weight: 900;
+}

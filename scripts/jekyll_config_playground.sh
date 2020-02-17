@@ -73,3 +73,6 @@ mkdir _includes
 
 # make a directory for data
 mkdir _data
+
+# make a directory for sass files
+mkdir _sass

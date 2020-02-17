@@ -39,8 +39,13 @@ git status
 
 git add -A
 
-git commit -m "Convert other exercises pages to Jekyll layouts
+git commit -m "Refactor showcase.css for Sass
 
-	Update fizzbuzz, hamming, leap_year, roman_numerals."
+	Take advantage of Jekyll/Sass and split monolithic showcase.css
+	in modules.
+
+	Make variable names verbose to help infer design intent from 
+	reading css rule.
+"
 
 git push -u origin master

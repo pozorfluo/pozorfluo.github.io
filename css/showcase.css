@@ -1,5 +1,6 @@
 @import 'highlight_theme.css';
 @import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono:300,500,700&display=swap');
+
 html {
     height: 100%;
 }
@@ -77,14 +78,14 @@ a {
     padding: 1em 0;
     text-decoration-skip-ink: auto;
     text-decoration-thickness: 1.5px;
-  }
-  a:hover {
+}
+a:hover {
     text-decoration-thickness: auto;
     -webkit-text-decoration-style: wavy;
             text-decoration-style: wavy;
     -webkit-text-decoration-color: initial;
             text-decoration-color: initial;
-  }
+}
 
 button {
     display: inline-block;
@@ -106,21 +107,23 @@ button {
     border: solid rgba(255, 255, 255, 0.2);
     border-width: 2px 1px 2px 1px;
     border-radius: 3px;
-    -webkit-box-shadow: 0px 0px 40px -5px rgba(0,105,237,0.2);
-       -moz-box-shadow: 0px 0px 40px -5px rgba(0,105,237,0.2);
-            box-shadow: 0px 0px 40px -5px rgba(0,105,237,0.2);
+    -webkit-box-shadow: 0px 0px 40px -5px rgba(0,105,237,0.2),
+                        inset 0px 2px 50px -25px rgba(255,255,255,0);
+       -moz-box-shadow: 0px 0px 40px -5px rgba(0,105,237,0.2),
+                        inset 0px 2px 50px -25px rgba(255,255,255,0);
+            box-shadow: 0px 0px 40px -5px rgba(0,105,237,0.2),
+                        inset 0px 2px 50px -25px rgba(255,255,255,0);
 }
 
 button:hover,
 button:focus {
     background: #0053ba;
-    /* text-transform: uppercase; */
     border: solid #0069ed;
     border-width: 3px 2px 1px 2px;
     border-radius: 4px;
 }
+
 button:active {
-    /* text-transform: uppercase; */
     background: #ffffff;
     color: #0069ed;
     transform: scale(0.99);
@@ -131,9 +134,11 @@ button:active {
 .svg-button {
     stroke: #fff;
 }
+
 button:active .svg-button{
     stroke: #0069ed;
 }
+
 .close {
     padding: 6px;
     stroke: #0053ba;
@@ -143,7 +148,6 @@ button:active .svg-button{
     float: right;
     padding: 0px 0px 0px 0px;
     border: solid #0053ba;
-
     border-width: 2px;
     border-radius: 4px;
 }
@@ -151,10 +155,11 @@ button:active .svg-button{
 .closebox:hover{
     background-color: #f2f5f8;
     border: solid #f2f5f8;
+    box-shadow: 0px 0px 40px -5px rgba(242,245,248,0.85);
 }
 .closebox:hover .close{
     border-width: 0px;
-    stroke: #FF6465;
+    stroke: #ff6465;
 }
 .closebox:active{
     border-color: #9be5a8;
@@ -176,7 +181,6 @@ pre {
 }
 
 code {
-
     padding: 2px 4px;
     background: #054ada;
     color: #f3f3f3;
@@ -208,16 +212,17 @@ input {
     padding: 1rem;
 }
 
+#output{
+    padding:0em;
+    font-size:2.5em;
+    font-weight: 900;
+}
+
 hr {
     background-color: #d9e2ea;
     height: 3px;
     border : none;
     border-radius: 5px;
-}
-#output{
-    padding:0em;
-    font-size:2.5em;
-    font-weight: 900;
 }
 
 .sig {
