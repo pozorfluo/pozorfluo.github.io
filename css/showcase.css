@@ -147,6 +147,7 @@ button:active .svg-button{
     border-width: 2px;
     border-radius: 4px;
 }
+
 .closebox:hover{
     background-color: #f2f5f8;
     border: solid #f2f5f8;
@@ -197,8 +198,14 @@ pre code {
 input {
     font-family: 'IBM Plex Mono', monospace;
     font-weight: 300;
-    padding:0.5em;
     font-size:2em;
+    color: #333;
+    background-color: #f2f5f8;
+    border: solid 2px #c2cad2;
+    border-radius: 5px;
+    width: 40.8rem;
+    margin: auto;
+    padding: 1rem;
 }
 
 #output{
