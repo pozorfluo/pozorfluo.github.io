@@ -1,37 +1,10 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>FizzBuzz</title>
-        <link rel="stylesheet" href="../css/showcase.css">
-        <script src="../js/vendor/highlight.pack.js"></script>
-    </head>
-    <body>
-        <article>
-            <a href="../index.html" class="closebox">
-                <img class="close" src="../data/close_cross.svg" 
-                     alt="click to close" 
-                     width="24" height="24" />
-            </a>
-            <h1>FizzBuzz</h1>
-            <p align="center" id="output">...</p>
-            <p align="center">
-                <input type="text" placeholder="Type a number..."/>
-            </p>
-            <br />
-            <h2>The code</h2>
-            <pre><code class="javascript">
-                <iframe src="../js/fizzbuzz.js" 
-                    onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()">
-                </iframe>
-           </code></pre>
-            <br/><br/>
-            <p align="center">
-                <button type="button" 
-                        onclick="window.location.href = '../index.html';">
-                         &laquo; back
-                </button>
-            </p>
-        </article>
-        <script src="../js/fizzbuzz.js"></script>
-    </body>
-</html>
+---
+layout : exercises
+title : "FizzBuzz"
+script : "fizzbuzz.js"
+---
+<h1>FizzBuzz</h1>
+<p align="center" id="output">...</p>
+<input type="text" placeholder="Type a number..."/>
+<br/>
+<br/>

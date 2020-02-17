@@ -16,6 +16,7 @@
                     onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()">
                 </iframe>
             </code></pre>
+            {{ page.caption | markdownify }}
             <br/><br/>
             {% include navigation.html %}
         </article>

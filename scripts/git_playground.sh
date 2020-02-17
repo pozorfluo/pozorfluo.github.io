@@ -39,15 +39,8 @@ git status
 
 git add -A
 
-git commit -m "Add cosmetic header to layouts.
+git commit -m "Convert other exercises pages to Jekyll layouts
 
-	Made units used in showcase.css more consistent for the header
-	to behave properly.
-
-	Inline close_cross.svg, it is convenient to do so in the layout
-	and allows tweak via css.
-
-	Adjust .closebox css rule to fit with new header.
-"
+	Update fizzbuzz, hamming, leap_year, roman_numerals."
 
 git push -u origin master
