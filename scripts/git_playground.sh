@@ -39,13 +39,6 @@ git status
 
 git add -A
 
-git commit -m "Refactor showcase.css for Sass
-
-	Take advantage of Jekyll/Sass and split monolithic showcase.css
-	in modules.
-
-	Make variable names verbose to help infer design intent from 
-	reading css rule.
-"
+git commit -m "Align focus and hover behaviour"
 
 git push -u origin master

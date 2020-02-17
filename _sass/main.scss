@@ -71,7 +71,9 @@ a {
     text-decoration-skip-ink: auto;
     text-decoration-thickness: 1.5px;
 }
-a:hover {
+
+a:hover,
+a:focus {
     text-decoration-thickness: auto;
     -webkit-text-decoration-style: wavy;
             text-decoration-style: wavy;
