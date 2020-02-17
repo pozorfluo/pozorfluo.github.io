@@ -201,13 +201,19 @@ input {
     font-size:2em;
     color: #333;
     background-color: #f2f5f8;
-    border: solid 2px #c2cad2;
+    border: solid 3px #d9e2ea;
     border-radius: 5px;
     width: 40.8rem;
     margin: auto;
     padding: 1rem;
 }
 
+hr {
+    background-color: #d9e2ea;
+    height: 3px;
+    border : none;
+    border-radius: 5px;
+}
 #output{
     padding:0em;
     font-size:2.5em;
