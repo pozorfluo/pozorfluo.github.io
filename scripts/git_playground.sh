@@ -39,9 +39,15 @@ git status
 
 git add -A
 
-git commit -m "Rough layout for exercises pages
+git commit -m "Add cosmetic header to layouts.
 
-	Modify hello_world.html to use that layout.
+	Made units used in showcase.css more consistent for the header
+	to behave properly.
+
+	Inline close_cross.svg, it is convenient to do so in the layout
+	and allows tweak via css.
+
+	Adjust .closebox css rule to fit with new header.
 "
 
 git push -u origin master
