@@ -11,11 +11,9 @@
             {% include header.html %}
             {{ content }}
             <h2>The code</h2>
-            <pre><code class="javascript">
-                <iframe src="/js/{{ page.script }}" 
-                    onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()">
-                </iframe>
-            </code></pre>
+            <pre>
+                <code class="javascript">{% include js/{{ page.script }} %}</code>
+            </pre>
             {{ page.caption | markdownify }}
             <br/><br/>
             {% include navigation.html %}
@@ -30,6 +28,6 @@
                 </svg>
             </a>
         </span>
-        <script src="/js/{{ page.script }}"></script>
+        <script>{% include js/{{ page.script }} %}</script>
     </body>
 </html>

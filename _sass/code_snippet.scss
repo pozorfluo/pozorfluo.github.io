@@ -1,12 +1,13 @@
 pre {
-    font-family: $font-code;
-    font-size:1em;
+
 	line-height: 1.25;
     margin: 0;
     padding: 0;
 }
 
 code {
+    font-family: $font-code;
+    font-size: 1rem;
     padding: 2px 4px;
     background: $color-accent-alt;
     color: $color-bg-dim;
