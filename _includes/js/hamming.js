@@ -21,10 +21,6 @@ window.onload = (event) => {
     const input1 = document.getElementById("input1");
     const input2 = document.getElementById("input2");
 
-    document.querySelectorAll("pre code").forEach((block) => {
-        hljs.highlightBlock(block);
-    });
-
     document.querySelectorAll("input").forEach((element) => {
         element.addEventListener("input", function() {
             changeInput(domElement, input1.value, input2.value)

@@ -39,11 +39,11 @@ git status
 
 git add -A
 
-git commit -m "Refactor syntax highlighting using Rouge
+git commit -m "Clean up project
 
-	Add custom theme loosely based on JetJet-Gray.
-	Display dim line numbers.
-
-	Fix missing vendor prefixes for box-shadow."
+	Remove lingering highlight.pack.js mentions.
+	Create _config.yml.
+	Exclude /scripts folder.
+	Delete unused files."
 
 git push -u origin master

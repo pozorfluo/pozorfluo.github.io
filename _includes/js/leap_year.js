@@ -13,10 +13,6 @@ window.onload = (event) => {
     const domElement = document.getElementById("output");
     const input = document.querySelector("input");
 
-    document.querySelectorAll("pre code").forEach((block) => {
-        hljs.highlightBlock(block);
-    });
-
     input.addEventListener("input", function() {
         changeInput(domElement, input.value ? 
             parseInt(input.value) : 
