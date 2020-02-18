@@ -39,17 +39,11 @@ git status
 
 git add -A
 
-git commit -m "Refactor exercises pages as Jekyll posts
+git commit -m "Refactor syntax highlighting using Rouge
 
-	Discard lists data/exercises.yaml.
+	Add custom theme loosely based on JetJet-Gray.
+	Display dim line numbers.
 
-	Take advatange of Jekyll posts previous/next lookup and add
-	navigation between posts in header.
-
-	Streamline .close button css rules to work with extended header
-	navigation.
-	
-	Rename .close button css rules to .nav to reflect extended 
-	functionality."
+	Fix missing vendor prefixes for box-shadow."
 
 git push -u origin master

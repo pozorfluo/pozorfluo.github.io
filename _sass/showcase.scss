@@ -2,13 +2,15 @@ input {
     font-family: $font-code;
     font-weight: 300;
     font-size:2em;
-    color: #333;
-    background-color: $color-bg-dim;
-    border: solid 3px $color-fg-faint;
+    color: $color-fg;
+    background-color: $color-fg-faint;
+    // border: solid 3px $color-bg-dim;
+    border: 0px;
     border-radius: 5px;
     width: 40.8rem;
     margin: auto;
     padding: 1rem;
+    @include box-shadow(inset 0px 2px 50px -25px $color-accent-irr);
 }
 
 #output{

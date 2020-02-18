@@ -11,9 +11,8 @@
             {% include header.html %}
             {{ content }}
             <h2>The code</h2>
-            <pre>
-                <code class="javascript">{% include js/{{ page.script }} %}</code>
-            </pre>
+{% highlight javascript linenos %}{% include js/{{ page.script }} %}
+{% endhighlight %}
             {{ page.caption | markdownify }}
             <br/><br/>
             {% include navigation.html %}

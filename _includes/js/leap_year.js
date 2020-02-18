@@ -1,6 +1,7 @@
 'use strict';
 
 function isLeap(year) {
+    // Force conversion to boolean with Double NOT (!!)
     return !!(!(year % 400) || ((year % 100) && !(year % 4)));
 }
 
