@@ -18,8 +18,12 @@ function toRomanNumerals(numberString)
     for (let i = 0; i <= digitCount; i++) {
         const exponent = digitCount - i;
 
-        if( exponent < 3 ) {
-            roman += lut[exponent][numberString[i]];
+        switch(exponent){
+            case 0:
+            case 1:
+            case 2:
+                roman += lut[exponent][numberString[i]];
+                break;
         }
     }
 

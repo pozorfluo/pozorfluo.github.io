@@ -61,7 +61,9 @@ h1 {
 h2 {
     padding-top: 0.5rem;
 }
-
+p {
+    line-height: normal;
+}
 a {
     color: $color-link;
     font-weight: 900;
