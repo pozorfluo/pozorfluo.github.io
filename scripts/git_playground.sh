@@ -39,8 +39,6 @@ git status
 
 git add -A
 
-git commit -m "Simplify roman_numerals_lut
-	
-	Avoid uncessary slicing."
+git commit -m "Tweak line-height across css rules"
 
 git push -u origin master

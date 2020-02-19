@@ -39,7 +39,7 @@ function toRomanNumerals(numberString)
 /**
  * Split input between non-digit and digits into array of strings
  * For each entry in array of strings
- *   If entry represents a number process toRomanNumerals
+ *   If entry represents a number, process it with toRomanNumerals
  * Update DOM with joined array of strings
  */
 function changeInput(domElement, input) 
