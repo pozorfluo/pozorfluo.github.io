@@ -39,18 +39,8 @@ git status
 
 git add -A
 
-git commit -m "Add exercise roman_numerals_lut
+git commit -m "Simplify roman_numerals_lut
 	
-	Fix typo in previous roman_numeral exercise caption.
-
-	Wrap js scripts in IIFE idiom.
-
-	Set syntax_highlighter_opts in _config.yml so markdown fenced code
-	block match the rest other code snippets.
-
-	Rough blockquote css rules.
-
-	Cleanup unused css from discarded syntax highlighting solution.
-"
+	Avoid uncessary slicing."
 
 git push -u origin master

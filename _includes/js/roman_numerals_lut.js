@@ -11,17 +11,24 @@ function toRomanNumerals(numberString)
         // ['M']                                                      // E3
     ];
 
-    const lowerDigits = numberString.slice(-3).split('');
-    const digitCount = lowerDigits.length - 1;
+    const digitCount = numberString.length - 1;
 
     let roman = '';
-    
-    for ( const [index, digit] of lowerDigits.entries()) {
-        const exponent = digitCount - index;
-        roman += lut[exponent][digit];
+
+    for (let i = 0; i <= digitCount; i++) {
+        const exponent = digitCount - i;
+
+        if( exponent < 3 ) {
+            roman += lut[exponent][numberString[i]];
+        }
     }
+
     // Bundle all digits above E2
-    return 'M'.repeat(numberString.slice(0,-3)) + roman;
+    if ( digitCount >= 3)    {
+        roman = 'M'.repeat(numberString.slice(0,-3)) + roman;
+    }
+
+    return roman;
 }
 
 
