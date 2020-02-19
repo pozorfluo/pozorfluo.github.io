@@ -39,11 +39,18 @@ git status
 
 git add -A
 
-git commit -m "Clean up project
+git commit -m "Add exercise roman_numerals_lut
+	
+	Fix typo in previous roman_numeral exercise caption.
 
-	Remove lingering highlight.pack.js mentions.
-	Create _config.yml.
-	Exclude /scripts folder.
-	Delete unused files."
+	Wrap js scripts in IIFE idiom.
+
+	Set syntax_highlighter_opts in _config.yml so markdown fenced code
+	block match the rest other code snippets.
+
+	Rough blockquote css rules.
+
+	Cleanup unused css from discarded syntax highlighting solution.
+"
 
 git push -u origin master

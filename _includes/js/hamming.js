@@ -1,6 +1,8 @@
+(function() {
 'use strict';
 
-function hamming(strand1, strand2) {
+function hamming(strand1, strand2) 
+{
     let differences = 0;
     const length = strand1.length;
 
@@ -10,7 +12,8 @@ function hamming(strand1, strand2) {
     return differences;
 }
 
-function changeInput(domElement, value1, value2) {
+function changeInput(domElement, value1, value2) 
+{
     domElement.textContent = (value1.length == value2.length ) ? 
         hamming(value1.toLowerCase(), value2.toLowerCase()) :
         "strands must be of equal length.";
@@ -27,3 +30,4 @@ window.onload = (event) => {
         }, false);
     });
 };
+})();

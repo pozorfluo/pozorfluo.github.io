@@ -1,1 +1,14 @@
 exclude: [scripts]
+
+sass:
+  style: compress
+
+kramdown:
+    input: GFM
+    syntax_highlighter_opts:
+        wrap: div
+        line_numbers: inline
+        line_numbers_start: 1
+        tab_width: 4
+        bold_every: 10
+        css: class

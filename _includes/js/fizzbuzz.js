@@ -1,6 +1,8 @@
+(function() {
 'use strict';
 
-function fizzbuzz(number) {
+function fizzbuzz(number) 
+{
     const result = [`${number}`,
                     "fizz",
                     "buzz",
@@ -9,7 +11,8 @@ function fizzbuzz(number) {
     return result[!(number % 3) + !(number % 5) * 2];
 }
 
-function changeInput(domElement, value) {
+function changeInput(domElement, value) 
+{
     domElement.textContent = value ? fizzbuzz(value) : "...";
 }
 
@@ -21,3 +24,4 @@ window.onload = (event) => {
         changeInput(domElement, parseInt(input.value))
     }, false);
 };
+})();

@@ -1,6 +1,8 @@
+(function() {
 'use strict';
 
-function sayHello(domElement, name) {
+function sayHello(domElement, name) 
+{
     domElement.textContent = `Hello, ${name}!`;
 }
 
@@ -12,3 +14,4 @@ window.onload = (event) => {
         sayHello(domElement, input.value ? input.value : 'World')
         }, false);
 };
+})();

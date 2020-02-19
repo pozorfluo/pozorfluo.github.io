@@ -1,11 +1,14 @@
+(function() {
 'use strict';
 
-function isLeap(year) {
+function isLeap(year) 
+{
     // Force conversion to boolean with Double NOT (!!)
     return !!(!(year % 400) || ((year % 100) && !(year % 4)));
 }
 
-function changeInput(domElement, value) {
+function changeInput(domElement, value) 
+{
     domElement.textContent = isLeap(value);
 }
 
@@ -19,3 +22,4 @@ window.onload = (event) => {
             2020)
     }, false);
 };
+})();

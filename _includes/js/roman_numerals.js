@@ -1,3 +1,4 @@
+(function() {
 'use strict';
 
 function toRomanNumerals(number)
@@ -17,9 +18,10 @@ function toRomanNumerals(number)
               .replace(/DCD/g,   'CM');
 }
 
-function changeInput(domElement, value = 0) {
-    const romanNumeral = toRomanNumerals(value);
-    domElement.textContent = romanNumeral ? romanNumeral : "...";
+function changeInput(domElement, value = 0) 
+{
+    const result = toRomanNumerals(value);
+    domElement.textContent = result ? result : "...";
 }
 
 window.onload = (event) => {
@@ -30,3 +32,4 @@ window.onload = (event) => {
         changeInput(domElement, input.value)
         }, false);
 };
+})();
