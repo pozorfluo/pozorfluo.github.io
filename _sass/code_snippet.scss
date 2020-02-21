@@ -38,6 +38,8 @@
  pre {
     font-family: $font-code;
     padding: 0rem;
+    line-height: 1.25;
+    tab-size: 4;
  }
 .lineno {
     color: $dt-gray;
@@ -53,12 +55,11 @@
 
     font-weight: 700;
     font-size: 0.85rem;
-    line-height: 1.25;
     margin: 0;
     display: block;
     position: relative;
     overflow-x: auto;
-    tab-size: 4;
+
     -webkit-overflow-scrolling: touch;
     padding: 0rem;
     border-radius: 5px;
