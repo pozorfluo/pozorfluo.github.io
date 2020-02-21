@@ -22,7 +22,7 @@ caption : |
     > |   900      | **CM**   |
     > |  1000      | **M**    |
 ---
-<h1>Roman Numerals</h1>
+<h1><b>Roman</b> Numerals</h1>
 <p align="center" id="output">...</p>
 <input type="text" id="input1" placeholder="Type a number..."/>
 <br/>

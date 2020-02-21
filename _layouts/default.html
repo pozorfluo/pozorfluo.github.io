@@ -8,10 +8,7 @@
     <body>
         <article>
             {% include header.html %}
-            <h1><!-- {% raw %} -->{{<!-- {% endraw %} -->
-                {{ page.heading }}
-                <!-- {% raw %} -->}}<!-- {% endraw %} -->
-            </h1>
+            <h1>{{ page.heading }}</h1>
             <br/>
             {{ content }}
             {% include navigation.html %}

@@ -48,6 +48,14 @@ article {
     color: $color-accent-dim;
 }
 
+b {
+    font-weight: 600;
+}
+
+strong {
+    font-weight: 700;
+}
+
 h1, h2 {
     font-weight: 300;
 }
@@ -56,6 +64,15 @@ h1 {
     text-align: center;
     font-size: 3.5rem;
     margin-bottom: 0rem;
+    letter-spacing: -0.2rem;
+    &:before {
+        content: "{ ";
+        color: $color-fg-faint;
+    }
+    &:after {
+        content: " }";
+        color: $color-fg-faint;
+    }
 }
 
 h2 {

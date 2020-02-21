@@ -52,7 +52,7 @@ caption : |
 
     Which I'll toy with next time I feel like doing crosswords :)
 ---
-<h1>Roman Numerals</h1>
+<h1><b>Roman</b> Numerals</h1>
 <p align="center" id="output">...</p>
 <input type="text" id="input1" placeholder="Type whatever..."/>
 <br/>
