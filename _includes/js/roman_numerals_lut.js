@@ -12,19 +12,14 @@ function toRomanNumerals(numberString)
     ];
 
     const digitCount = numberString.length - 1;
-
     let roman = '';
 
-    for (let i = 0; i <= digitCount; i++) {
-        const exponent = digitCount - i;
-
-        switch(exponent){
-            case 0:
-            case 1:
-            case 2:
-                roman += lut[exponent][numberString[i]];
-                break;
-        }
+    // Encode digits for E0-E2 if any
+    const lowIndex = Math.max(0, numberString.length - 3);
+  
+    for (let i = lowIndex; i <= digitCount; i++) {
+      const exponent = digitCount - i;
+      roman += lut[exponent][numberString[i]];
     }
 
     // Bundle all digits above E2
